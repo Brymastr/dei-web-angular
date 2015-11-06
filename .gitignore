@@ -1,3 +1,6 @@
 .vscode/
 .idea/
 dist/
+node_modules/
+libs/
+bower_components/

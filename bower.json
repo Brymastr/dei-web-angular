@@ -1,0 +1,25 @@
+{
+  "name": "dei-angular",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Brycen Dorsay <bdorsay@rbauction.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Brymastr/dei-web-angular",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.7",
+    "angular-animate": "~1.4.7",
+    "angular-route": "~1.4.7",
+    "angular-material": "~0.11.4",
+    "jquery": "~2.1.4"
+  }
+}
