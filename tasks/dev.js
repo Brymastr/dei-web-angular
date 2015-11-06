@@ -8,10 +8,26 @@ gulp.task('styles', function() {
     .pipe(plugins.livereload());
 });
 
+gulp.task('html', function() {
+  return gulp.src('./views/*.html')
+    .pipe(plugins.livereload());
+});
+
+
 gulp.task('watch', function() {
   plugins.livereload.listen();
   gulp.watch('./styles/**/*.scss', ['styles']);
+  gulp.watch('./views/*.html', ['html']);
+  gulp.watch([
+    './controllers/*.js',
+    './directives/*.js',
+    './models/*.js',
+    './scripts/*.js',
+    './config/*.js',
+    './tasks/*.js'
+  ], []);
 });
+
 
 gulp.task('serve', function() {
   plugins.nodemon({
@@ -21,4 +37,4 @@ gulp.task('serve', function() {
   })
 });
 
-gulp.task('run', ['styles', 'serve', 'watch']);
+gulp.task('run', ['styles', 'html', 'serve', 'watch']);
