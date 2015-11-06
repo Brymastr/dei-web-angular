@@ -1,0 +1,24 @@
+var gulp = require('gulp');
+var plugins = require('gulp-load-plugins')();
+
+gulp.task('styles', function() {
+  return gulp.src('./styles/*.scss')
+    .pipe(plugins.sass().on('error', plugins.sass.logError))
+    .pipe(gulp.dest('./styles/'))
+    .pipe(plugins.livereload());
+});
+
+gulp.task('watch', function() {
+  plugins.livereload.listen();
+  gulp.watch('./styles/**/*.scss', ['styles']);
+});
+
+gulp.task('serve', function() {
+  plugins.nodemon({
+    script: 'server.js',
+    ext: 'js html',
+    env: {'NODE_ENV' : 'development'}
+  })
+});
+
+gulp.task('run', ['styles', 'serve', 'watch']);

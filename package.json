@@ -9,6 +9,13 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "express": "^4.13.3"
-  }
+    "express": "^4.13.3",
+    "gulp": "^3.9.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-load-plugins": "^1.1.0",
+    "gulp-nodemon": "^2.0.4",
+    "gulp-sass": "^2.1.0",
+    "require-dir": "^0.3.0"
+  },
+  "dependencies": {}
 }
