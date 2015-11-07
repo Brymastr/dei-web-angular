@@ -55,14 +55,16 @@ body, html {
   font-weight: 700;
   text-transform: uppercase !important;
   padding: 0 10px; }
-  #header ul li {
-    display: inline;
+  #header li {
+    float: left;
+    height: 40px;
     line-height: 40px;
     font-size: 10.5pt; }
   #header a {
-    height: 40px;
+    display: block;
     text-decoration: none;
-    color: white; }
+    color: white;
+    padding: 0 5px; }
     #header a:visited {
       color: white; }
     #header a:hover {
