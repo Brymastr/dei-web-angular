@@ -60,11 +60,15 @@ body, html {
     height: 40px;
     line-height: 40px;
     font-size: 10.5pt; }
+    #header li span {
+      padding: 0 4px; }
+    #header li .arrow {
+      font-size: 7pt; }
   #header a {
     display: block;
     text-decoration: none;
     color: white;
-    padding: 0 5px; }
+    padding: 0 10px; }
     #header a:visited {
       color: white; }
     #header a:hover {
