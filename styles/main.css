@@ -48,32 +48,38 @@ table {
 body, html {
   background-color: #CCCCCC; }
 
-#header {
+nav {
   background-color: #E87511;
   height: 40px;
   font-family: open_sans, helvetica, arial, sans-serif;
   font-weight: 700;
-  text-transform: uppercase !important;
+  text-transform: uppercase;
   padding: 0 10px; }
-  #header li {
+  nav li {
     float: left;
     height: 40px;
     line-height: 40px;
     font-size: 10.5pt; }
-    #header li span {
+    nav li span {
       padding: 0 4px; }
-    #header li i:nth-last-child(-n+2) {
+    nav li i:nth-last-child(-n+2) {
       font-size: 7pt; }
-  #header a {
+  nav a {
     display: block;
     text-decoration: none;
     color: white;
     padding: 0 10px; }
-    #header a:visited {
+    nav a:visited {
       color: white; }
-    #header a:hover {
+    nav a:hover {
       color: white;
       background-color: #696969; }
+
+nav ul ul {
+  display: none; }
+
+nav ul li:hover > ul {
+  display: block; }
 
 #tab-bar {
   background-color: #F1903B;
