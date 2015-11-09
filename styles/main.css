@@ -62,7 +62,7 @@ body, html {
     font-size: 10.5pt; }
     #header li span {
       padding: 0 4px; }
-    #header li .arrow {
+    #header li i:nth-last-child(-n+2) {
       font-size: 7pt; }
   #header a {
     display: block;
