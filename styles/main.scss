@@ -44,13 +44,7 @@ nav {
   }
 }
 
-nav ul ul {
-	display: none;
-}
-
-nav ul li:hover > ul {
-  display: block;
-}
+@import 'dropdown';
 
 #tab-bar {
   background-color: $tab-bar-color;

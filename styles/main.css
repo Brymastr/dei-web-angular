@@ -81,6 +81,35 @@ nav ul ul {
 nav ul li:hover > ul {
   display: block; }
 
+nav ul {
+  list-style: none;
+  position: relative; }
+
+nav ul:after {
+  content: "";
+  clear: both;
+  display: block; }
+
+nav ul li {
+  float: left; }
+
+nav ul li a {
+  display: block; }
+
+nav ul ul {
+  border-radius: 0px;
+  padding: 0;
+  position: absolute;
+  top: 100%; }
+
+nav ul ul li {
+  float: none;
+  position: relative;
+  background-color: #696969; }
+
+.dropdown li a:hover {
+  background-color: #434343; }
+
 #tab-bar {
   background-color: #F1903B;
   height: 30px;
