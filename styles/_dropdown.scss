@@ -52,6 +52,12 @@ nav ul ul li {
   }
 }
 
+.dropdown .h-border {
+  width: 100%;
+  border-bottom: 1px $header-highlight-color solid;
+  // padding: 5px 0;
+}
+
 .dropdown li a:hover {
   background-color: $header-highlight-color;
 }
