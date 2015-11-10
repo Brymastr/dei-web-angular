@@ -73,10 +73,7 @@ nav {
       color: white; }
     nav a:hover {
       color: white;
-      background-color: #696969; }
-
-nav ul ul {
-  display: none; }
+      background-color: #505050; }
 
 nav ul li:hover > ul {
   display: block; }
@@ -97,6 +94,7 @@ nav ul li a {
   display: block; }
 
 nav ul ul {
+  display: none;
   border-radius: 0px;
   padding: 0;
   position: absolute;
@@ -105,7 +103,17 @@ nav ul ul {
 nav ul ul li {
   float: none;
   position: relative;
-  background-color: #696969; }
+  background-color: #505050; }
+
+.dropdown li a {
+  display: block; }
+  .dropdown li a i {
+    font-size: 12.5pt; }
+  .dropdown li a .v-border {
+    display: inline;
+    padding: 12px 0 13px 0;
+    border-left: 1px #434343 solid;
+    margin: 0 5px; }
 
 .dropdown li a:hover {
   background-color: #434343; }

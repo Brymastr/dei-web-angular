@@ -39,7 +39,7 @@ nav {
     }
     &:hover {
       color: $header-font-color;
-      background-color: $header-item-highlight-color;
+      background-color: $header-dropdown-color;
     }
   }
 }
@@ -49,5 +49,5 @@ nav {
 #tab-bar {
   background-color: $tab-bar-color;
   height: $tab-bar-height;
-  border-bottom: white 6px solid;
+  border-bottom: $header-font-color 6px solid;
 }

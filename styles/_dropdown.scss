@@ -1,9 +1,5 @@
 @import 'variables';
 
-nav ul ul {
-	display: none;
-}
-
 nav ul li:hover > ul {
   display: block;
 }
@@ -28,6 +24,7 @@ nav ul li a {
 }
 
 nav ul ul {
+  display: none;
   border-radius: 0px;
   padding: 0;
   position: absolute;
@@ -37,11 +34,26 @@ nav ul ul {
 nav ul ul li {
   float: none; 
   position: relative;
-  background-color: $header-item-highlight-color;
+  background-color: $header-dropdown-color;
+}
+
+.dropdown li a {
+  display: block;
+  
+  i {
+    font-size: $header-font-size + 2pt;
+  }
+  
+  .v-border {
+    display: inline;
+    padding: 12px 0 13px 0;    
+    border-left: 1px $header-highlight-color solid;
+    margin: 0 5px;
+  }
 }
 
 .dropdown li a:hover {
-  background-color: #434343;
+  background-color: $header-highlight-color;
 }
 		
 		
