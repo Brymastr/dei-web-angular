@@ -46,12 +46,12 @@ table {
   border-spacing: 0; }
 
 body, html {
-  background-color: #CCCCCC; }
+  background-color: #CCCCCC;
+  font-family: open_sans, helvetica, arial, sans-serif; }
 
 nav {
   background-color: #E87511;
   height: 40px;
-  font-family: open_sans, helvetica, arial, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   padding: 0 10px; }
@@ -124,4 +124,19 @@ nav ul ul li {
 #tab-bar {
   background-color: #F1903B;
   height: 30px;
-  border-bottom: white 6px solid; }
+  border-bottom: white 6px solid;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 10.5pt;
+  color: #E87511; }
+  #tab-bar .tab {
+    float: left;
+    margin: 5px 0 0 5px;
+    padding: 5px 10px 0 10px;
+    height: 20px;
+    border-radius: 7px 7px 0 0;
+    background-color: white;
+    color: #E87511;
+    text-decoration: none; }
+    #tab-bar .tab .close-tab i {
+      color: white; }
